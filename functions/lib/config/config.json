@@ -1,0 +1,16 @@
+{
+    "gcp": {
+        "pubsub": {
+            "topicName": "receiving-emails"
+        }
+    },
+    "gmail": {
+        "scopes": ["https://www.googleapis.com/auth/gmail.readonly"],
+        "labelsIds": ["UNREAD"],
+        "filterAction": "include"
+    },
+    "auth": {
+        "googleKeyFilePath": "credentials/credentials.privatekey.json",
+        "subject": "GMAIL_Email_Address"
+    }
+}
